@@ -1,0 +1,26 @@
+project_folder_path: "dbfs:/mnt/znailla_marketing'
+
+raw_data:f"{project_folder_path}/data/raw_data/marketing_file.csv
+
+processed_data:f"{project_folder_path}/data/processed_data/file.csv
+
+anayltical_data:f"{project_folder_path}/data/analytical_data/file.csv
+
+rename_columns:
+	'emp.var.rate': 'employment variation rate'
+	'cons.price.idx': 'consumer price index'
+	'cons.conf.idx': 'consumer confidence index'
+	'euribor3m':'euribor'
+	'nr.employed': 'number of employees'
+
+cast_type_columns:['age','job_grouped','marital','education_grouped','default',
+		   'housing','loan','contact','month','day_of_week','duration',
+		   'campaign','pdays','previous','poutcome','deposit']
+
+cast_categories:['int','category','category','category','category'
+		 'category','category','category','category',
+		 'category','int','int','int','int','category','category']
+
+		     
+	
+
